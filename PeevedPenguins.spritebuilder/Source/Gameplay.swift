@@ -12,10 +12,14 @@ class Gameplay: CCNode {
    
     weak var gamePhysicsNode: CCPhysicsNode!
     weak var catapultArm: CCNode!
+    weak var levelNode: CCNode!
+    weak var contentNode: CCNode!
     
     // called when CCB file has completed loading
     func didLoadFromCCB() {
         userInteractionEnabled = true
+        let level = CCBReader.load("Levels/Level1")
+        levelNode.addChild(level)
     }
     
     // called on every touch in this scene
@@ -36,6 +40,14 @@ class Gameplay: CCNode {
         let launchDirection = CGPoint(x: 1, y: 0)
         let force = ccpMult(launchDirection, 8000)
         penguin.physicsBody.applyForce(force)
+        // ensure followed object is in visible are when starting
+        position = CGPoint.zeroPoint
+        let actionFollow = CCActionFollow(target: penguin, worldBoundary: boundingBox())
+        contentNode.runAction(actionFollow)
     }
-    
+
+    func retry() {
+        let gameplayScene = CCBReader.loadAsScene("Gameplay")
+        CCDirector.sharedDirector().presentScene(gameplayScene)
+    }
 }
