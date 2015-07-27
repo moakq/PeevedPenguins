@@ -93,6 +93,7 @@
 		BC5399DA1A44DCC90063F482 /* GLActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D51A44DCC90063F482 /* GLActivityKit.framework */; };
 		BC5399DB1A44DCC90063F482 /* JavaFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D61A44DCC90063F482 /* JavaFoundation.framework */; };
 		BC5399DC1A44DCC90063F482 /* JavaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D71A44DCC90063F482 /* JavaKit.framework */; };
+		C865023D1B664B3100CACF3C /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865023C1B664B3100CACF3C /* Gameplay.swift */; };
 		C89CCC071B648FE800BE565F /* Penguin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CCC061B648FE800BE565F /* Penguin.swift */; };
 		C89CCC0D1B64901600BE565F /* Seal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CCC0C1B64901600BE565F /* Seal.swift */; };
 /* End PBXBuildFile section */
@@ -212,6 +213,7 @@
 		BC5399D51A44DCC90063F482 /* GLActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLActivityKit.framework; path = "../../../../Library/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/GLActivityKit.framework"; sourceTree = "<group>"; };
 		BC5399D61A44DCC90063F482 /* JavaFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFoundation.framework; path = "../../../../Library/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaFoundation.framework"; sourceTree = "<group>"; };
 		BC5399D71A44DCC90063F482 /* JavaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaKit.framework; path = "../../../../Library/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaKit.framework"; sourceTree = "<group>"; };
+		C865023C1B664B3100CACF3C /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gameplay.swift; path = PeevedPenguins.xcodeproj/../Source/Gameplay.swift; sourceTree = "<group>"; };
 		C89CCC061B648FE800BE565F /* Penguin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Penguin.swift; path = Source/Penguin.swift; sourceTree = "<group>"; };
 		C89CCC0C1B64901600BE565F /* Seal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Seal.swift; path = Source/Seal.swift; sourceTree = "<group>"; };
 		D352B48019EC608A00829775 /* MetalShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MetalShaders; path = Source/MetalShaders; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				C89CCC061B648FE800BE565F /* Penguin.swift */,
 				C89CCC0C1B64901600BE565F /* Seal.swift */,
+				C865023C1B664B3100CACF3C /* Gameplay.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
 			name = Source;
@@ -819,6 +822,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
+				C865023D1B664B3100CACF3C /* Gameplay.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				C89CCC071B648FE800BE565F /* Penguin.swift in Sources */,
 				C89CCC0D1B64901600BE565F /* Seal.swift in Sources */,
